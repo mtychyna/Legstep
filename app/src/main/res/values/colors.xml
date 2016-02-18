@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base colors-->
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#88000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_grey">#ffd8d8d8</color>
+    <color name="grey">#ffbcbcbc</color>
+    <color name="dark_grey">#ff8a8a8a</color>
+    <color name="black">#ff000000</color>
+
+    <!--Backgrounds-->
+    <color name="background">@color/white</color>
+    <color name="background_blue">#ffbae6ff</color>
+    <color name="background_ltgrey">@color/light_grey</color>
+    <color name="background_darker">@color/grey</color>
+    <color name="background_dark_blue">@color/dark_blue</color>
+    <color name="background_legstep">@color/legstep_main</color>
+
+    <!--Main colors-->
+    <color name="orange">@color/orange_700</color>
+    <color name="green">#ff79b03e</color>
+    <color name="dark_blue">#ff146a9b</color>
+    <color name="legstep_main">#ff008ee2</color>
+
+    <!--Material colors-->
+    <color name="light_blue_900">#ff01579b</color>
+
+    <color name="Cyan900">#ff006064</color>
+    <color name="LightBlueA400">#ff00b0ff</color>
+
+    <color name="BlueGrey900">#ff263238</color>
+    <color name="blue_grey_700">#ff455a64</color>
+    <color name="blue_grey_500">#ff607d8b</color>
+    <color name="blue_grey_300">#ff90a4ae</color>
+    <color name="BlueGrey100">#ffcfd8dc</color>
+
+    <color name="orange_700">#fff57c00</color>
+    <color name="orange_500">#ffff9800</color>
+    <color name="orange_300">#ffffb74d</color>
+    <color name="Orange100">#ffffe0b2</color>
+
+    <!--Text colors-->
+    <color name="text_white">@color/white</color>
+    <color name="text_black">@color/black</color>
+    <color name="text_green">@color/green</color>
+    <color name="text_dark_blue">@color/dark_blue</color>
+    <color name="text_main">@color/legstep_main</color>
+    <color name="text_blue_grey">@color/blue_grey_700</color>
+    <color name="text_orange">@color/orange</color>
+    <color name="text_hint">@color/blue_grey_300</color>
+
+    <!--Button colors-->
+    <color name="button_legstep">@color/legstep_main</color>
+    <color name="button_legstep_ltr">#ff3cadf1</color>
+    <color name="button_legstep_inactive">@color/blue_grey_300</color>
+    <color name="button_dark_blue">@color/dark_blue</color>
+    <color name="button_dark_blue_ltr">#ff067bbd</color>
+    <color name="button_orange">@color/orange</color>
+    <color name="button_orange_ltr">@color/orange_300</color>
+
+    <!-- Other -->
+    <color name="splitter_light_grey">#ffeaeaea</color>
+    <color name="splitter_grey">@color/light_grey</color>
+    <color name="placeholder_color">@color/light_grey</color>
+    <color name="headline_grey">@color/grey</color>
+
+</resources>

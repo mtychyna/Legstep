@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- ActionBar styles -->
+    <style name="ActionBarContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_bar_button_height</item>
+        <item name="android:background">@color/background_legstep</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ActionBarCaption" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Labels-->
+    <style name="MainTitle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainTitle.White" parent="MainTitle">
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="MainTitle.Black" parent="MainTitle">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="MainLabel" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MainLabel.Black" parent="MainTitle">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="BlueGreyLabel" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/text_blue_grey</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="BlueGreyLabel.Normal" parent="BlueGreyLabel">
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <!--Button-->
+    <style name="ButtonPrimary" parent="Button">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">@dimen/button_small_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/button_small_padding_horizontal</item>
+    </style>
+
+    <style name="ButtonPrimary.withActivatedState" parent="ButtonPrimary">
+        <item name="android:background">@drawable/button_primary_with_acticated_state</item>
+    </style>
+
+    <style name="ButtonPrimary.Clear" parent="ButtonPrimary">
+        <item name="android:background">@drawable/button_primary_clean</item>
+        <item name="android:textColor">@color/text_main</item>
+    </style>
+
+    <style name="InlineNumberPickerButton">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:layout_width">@dimen/plus_minus_icon_size</item>
+        <item name="android:layout_height">@dimen/plus_minus_icon_size</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">@dimen/button_small_padding_vertical</item>
+    </style>
+
+    <!--EditText-->
+    <style name="LegstepCommonEditText" parent="@android:style/Widget.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:background">@drawable/edittext_common</item>
+    </style>
+</resources>

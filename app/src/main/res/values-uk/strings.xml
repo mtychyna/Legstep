@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_add_route">Додати шлях</string>
+    <string name="action_check_podium">Перевірити</string>
+    <string name="action_initial">На початок</string>
+    <string name="action_restore">Відновити</string>
+    <string name="activity_title_settings">Налаштування</string>
+    <string name="creature">Ваша тваринка</string>
+    <string name="creature_config">Тваринка</string>
+    <string name="creature_default_title">Чубака</string>
+    <string name="creature_default_type">Собачка</string>
+    <string name="creature_legs_number">Ніжок</string>
+    <string name="creature_paws">Порядок лапок</string>
+    <string name="creature_step_size">Розмір кроку</string>
+    <string name="creature_title">Назва</string>
+    <string name="creature_title_hint">Введіть назву</string>
+    <string name="creature_type">Тип</string>
+    <string name="creature_type_hint">Введіть тип</string>
+    <string name="date_today">Сьогодні</string>
+    <string name="date_tomorrow">Завтра</string>
+    <string name="legstep_hi" formatted="false">Привіт я %s.\nДавай пограємо!</string>
+    <string name="legstep_i_am" formatted="false">Я %s</string>
+    <string name="legstep_legs" formatted="false">З %d ніжками</string>
+    <string name="podium">Ваш подіум</string>
+    <string name="podium_add_route">Додати шлях</string>
+    <string name="podium_config">Подіум</string>
+    <string name="podium_length" formatted="false">Довжина подіуму %d метрів.</string>
+    <string name="podium_new_route_direction">Напрям</string>
+    <string name="podium_new_route_length">Довжина</string>
+    <string name="podium_routes">Шляхи подіуму</string>
+    <string name="podium_size">Розмір подіуму</string>
+    <string name="podium_snackbar_podium_invalid">Подіум невірний! Перевірте довжину та шляхи!</string>
+    <string name="podium_snackbar_podium_valid">Подіум вірний!</string>
+    <string name="podium_toast_routes_invalid">Шляхи невірні. Подіум повернутий до початкових налаштувань.</string>
+    <string name="podium_validate">Перевірка</string>
+    <string name="position_at_position" formatted="false">%s в %d м позиції</string>
+    <string name="position_complete">Прогулянка закінчена! Повертаємось на початок.</string>
+    <string name="position_initial" formatted="false">%s в початковій позиції</string>
+    <string name="position_move_backward" formatted="false">%s рухається назад з %d позиції</string>
+    <string name="position_move_forward" formatted="false">%s рухається вперед з %d позиції</string>
+    <string name="position_return_to_initial" formatted="false">%s повертається на початок</string>
+    <string name="restore_snackbar_defaults_confirm">Повернення початкових налаштувань безповоротно змінить поточні дані. Продовжити?</string>
+</resources>

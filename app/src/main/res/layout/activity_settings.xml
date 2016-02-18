@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding"
+            tools:context="com.azzdorfrobotics.android.legstep.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--ACTIONS-->
+
+        <LinearLayout
+            android:id="@+id/actions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/creature_config"
+                style="@style/ButtonPrimary.withActivatedState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creature_config"
+                android:textSize="@dimen/text_medium"/>
+
+            <View
+                android:layout_width="@dimen/activity_margin_horizontal"
+                android:layout_height="@dimen/activity_margin_vertical"/>
+
+            <Button
+                android:id="@+id/podium_config"
+                style="@style/ButtonPrimary.withActivatedState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/podium_config"
+                android:textSize="@dimen/text_medium"/>
+
+            <View
+                android:layout_width="@dimen/activity_margin_horizontal"
+                android:layout_height="@dimen/activity_margin_vertical"/>
+
+            <Button
+                android:id="@+id/restore_defaults"
+                style="@style/ButtonPrimary.Clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restore_defaults"
+                android:textSize="@dimen/text_normal"/>
+
+        </LinearLayout>
+
+        <!--CREATURE-->
+
+        <LinearLayout
+            android:id="@+id/creature_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/MainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_vertical"
+                android:text="@string/creature"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_vertical">
+
+                <TextView
+                    style="@style/BlueGreyLabel"
+                    android:layout_marginTop="@dimen/activity_margin_vertical"
+                    android:text="@string/creature_title"/>
+
+                <ImageView
+                    android:id="@+id/title_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_clickable_background"
+                    android:src="@drawable/ic_action_edit_mode_with_states"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/creature_title"
+                style="@style/LegstepCommonEditText"
+                android:hint="@string/creature_title_hint"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_vertical">
+
+                <TextView
+                    style="@style/BlueGreyLabel"
+                    android:layout_marginTop="@dimen/activity_margin_vertical"
+                    android:text="@string/creature_type"/>
+
+                <ImageView
+                    android:id="@+id/type_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_clickable_background"
+                    android:src="@drawable/ic_action_edit_mode_with_states"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/creature_type"
+                style="@style/LegstepCommonEditText"
+                android:hint="@string/creature_type_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel.Normal"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/creature_step_size"/>
+
+                    <com.azzdorfrobotics.android.legstep.widgets.InlineNumberPicker
+                        android:id="@+id/step_size_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:format="@string/common_integer_picker"
+                        app:maxValue="8"
+                        app:minValue="1"
+                        app:stepSize="1"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/activity_margin_horizontal"
+                    android:layout_height="@dimen/activity_margin_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel.Normal"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/creature_legs_number"/>
+
+                    <com.azzdorfrobotics.android.legstep.widgets.InlineNumberPicker
+                        android:id="@+id/legs_number_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:format="@string/common_integer_picker"
+                        app:maxValue="8"
+                        app:minValue="1"
+                        app:stepSize="1"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/activity_margin_horizontal"
+                    android:layout_height="@dimen/activity_margin_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel.Normal"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/creature_id"/>
+
+                    <com.azzdorfrobotics.android.legstep.widgets.InlineNumberPicker
+                        android:id="@+id/id_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:format="@string/common_integer_picker"
+                        app:maxValue="25"
+                        app:minValue="0"
+                        app:stepSize="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/BlueGreyLabel"
+                android:layout_marginTop="@dimen/activity_margin_vertical"
+                android:text="@string/creature_paws"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/paws_list"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </LinearLayout>
+
+        <!--PODIUM-->
+
+        <LinearLayout
+            android:id="@+id/podium_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/MainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_vertical"
+                android:text="@string/podium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/podium_size"/>
+
+                    <com.azzdorfrobotics.android.legstep.widgets.InlineNumberPicker
+                        android:id="@+id/podium_size_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:format="@string/common_integer_picker"
+                        app:maxValue="8"
+                        app:minValue="1"
+                        app:stepSize="1"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/activity_margin_horizontal"
+                    android:layout_height="@dimen/activity_margin_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/podium_validate"/>
+
+                    <Button
+                        android:id="@+id/route_validate"
+                        style="@style/ButtonPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_gravity="center"
+                        android:text="@string/action_check_podium"
+                        android:textSize="@dimen/text_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/podium_routes"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/routes_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/activity_margin_horizontal"
+                    android:layout_height="@dimen/activity_margin_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlueGreyLabel"
+                        android:layout_marginTop="@dimen/activity_margin_vertical"
+                        android:text="@string/podium_add_route"/>
+
+                    <TextView
+                        style="@style/BlueGreyLabel.Normal"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="@string/podium_new_route_length"/>
+
+                    <com.azzdorfrobotics.android.legstep.widgets.InlineNumberPicker
+                        android:id="@+id/new_route_size_picker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:format="@string/common_integer_picker"
+                        app:maxValue="8"
+                        app:minValue="1"
+                        app:stepSize="1"/>
+
+                    <TextView
+                        style="@style/BlueGreyLabel.Normal"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="@string/podium_new_route_direction"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/direction_backward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_direction_backward_with_states"/>
+
+                        <ImageView
+                            android:id="@+id/direction_forward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_direction_forward_with_states"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/route_add"
+                        style="@style/ButtonPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_gravity="center"
+                        android:text="@string/action_add_route"
+                        android:textSize="@dimen/text_medium"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

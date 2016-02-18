@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_add_route">Добавить путь</string>
+    <string name="action_check_podium">Проверить</string>
+    <string name="action_restore">Восстановить</string>
+    <string name="activity_title_settings">Настройки</string>
+    <string name="creature">Ваше создание</string>
+    <string name="creature_config">Создание</string>
+    <string name="creature_default_type">Собака</string>
+    <string name="creature_legs_number">Кол-во ног</string>
+    <string name="creature_paws">Порядок лап</string>
+    <string name="creature_step_size">Размер шага</string>
+    <string name="creature_title">Название</string>
+    <string name="creature_title_hint">Введите название </string>
+    <string name="creature_type">Тип</string>
+    <string name="creature_type_hint">Введите тип</string>
+    <string name="date_today">Сегодня</string>
+    <string name="date_tomorrow">Завтра</string>
+    <string name="legstep_hi" formatted="false">Привет моё имя %s.\nДавай играть!</string>
+    <string name="legstep_i_am" formatted="false">Я %s</string>
+    <string name="legstep_legs" formatted="false">С %d ногами</string>
+    <string name="podium">Ваш подиум</string>
+    <string name="podium_add_route">Добавить путь</string>
+    <string name="podium_config">Подиум</string>
+    <string name="podium_length" formatted="false">Длинна подиума %d метров.</string>
+    <string name="podium_new_route_direction">Направление</string>
+    <string name="podium_new_route_length">Длинна</string>
+    <string name="podium_routes">Пути подиума</string>
+    <string name="podium_size">Размер подиума</string>
+    <string name="podium_snackbar_podium_invalid">Подиум неправильный! Проверьтедлинну и пути!</string>
+    <string name="podium_snackbar_podium_valid">Подиум верный!</string>
+    <string name="podium_toast_routes_invalid">Пути не верны. Подиум вернут к стандартному.</string>
+    <string name="podium_validate">Проверка</string>
+    <string name="position_at_position" formatted="false">%s в %d м позиции</string>
+    <string name="position_complete">Прогулка завершена! Возращаюсь к изначальной позиции.</string>
+    <string name="position_initial" formatted="false">%s в начальной позиции</string>
+    <string name="action_initial">В начало</string>
+    <string name="position_move_backward" formatted="false">%s движется назад с %d позиции</string>
+    <string name="position_move_forward" formatted="false">%s движется вперед с %d позиции</string>
+    <string name="position_return_to_initial" formatted="false">%s возвращается в начало</string>
+    <string name="restore_snackbar_defaults_confirm">Значения по умлочанию перезатрут текущие данные. Продолжить?</string>
+    <string name="creature_default_title">Чубака</string>
+</resources>

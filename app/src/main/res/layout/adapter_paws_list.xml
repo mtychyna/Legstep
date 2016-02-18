@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.azzdorfrobotics.android.legstep.widgets.DynamicRecyclerView.adapters.PawsRecyclerListAdapter">
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/MainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="1"/>
+
+    <ImageView
+        android:id="@+id/handle_drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_small"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_action_handle_drag"/>
+</RelativeLayout>

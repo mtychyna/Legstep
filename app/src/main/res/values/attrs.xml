@@ -1,0 +1,11 @@
+<resources>
+
+    <declare-styleable name="InlineNumberPicker">
+        <attr name="numberValue" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="stepSize" format="integer"/>
+        <attr name="format" format="string"/>
+    </declare-styleable>
+
+</resources>

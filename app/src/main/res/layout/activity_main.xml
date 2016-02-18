@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            tools:context="com.azzdorfrobotics.android.legstep.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_horizontal">
+
+            <TextView
+                android:id="@+id/legstep_hi"
+                style="@style/MainTitle.Black"
+                android:layout_centerInParent="true"
+                android:text="@string/legstep_hi"/>
+
+            <ImageView
+                android:id="@+id/legstep_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_clickable_background"
+                android:src="@drawable/ic_creature_config"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_legstep"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/legstep_type"
+                    style="@style/MainTitle.White"
+                    android:text="@string/legstep_i_am"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_background"/>
+
+                <TextView
+                    android:id="@+id/legstep_legs"
+                    style="@style/MainTitle"
+                    android:layout_centerInParent="true"
+                    android:text="@string/legstep_legs"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_horizontal"
+            android:layout_marginRight="@dimen/activity_margin_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/legstep_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/legstep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/legstep"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/podium_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/podium"/>
+
+            <TextView
+                android:id="@+id/podium_length"
+                style="@style/MainLabel.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/podium_length"/>
+
+            <TextView
+                android:id="@+id/legstep_status"
+                style="@style/MainTitle.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_margin_vertical"
+                android:layout_marginTop="@dimen/activity_margin_vertical"
+                android:text="@string/position_initial"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/legstep_initial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_initial"/>
+
+                <ImageView
+                    android:id="@+id/legstep_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_pressed"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

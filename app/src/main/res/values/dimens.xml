@@ -1,0 +1,63 @@
+<resources>
+
+    <!--Standard design sizes-->
+    <dimen name="large">32dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="micro">4dp</dimen>
+
+    <dimen name="elevation">2dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_large">@dimen/large</dimen>
+    <dimen name="margin_medium">@dimen/medium</dimen>
+    <dimen name="margin_small">@dimen/small</dimen>
+    <dimen name="margin_micro">@dimen/micro</dimen>
+
+    <dimen name="padding_large">@dimen/large</dimen>
+    <dimen name="padding_medium">@dimen/medium</dimen>
+    <dimen name="padding_small">@dimen/small</dimen>
+    <dimen name="padding_micro">@dimen/micro</dimen>
+
+    <dimen name="activity_padding">@dimen/padding_medium</dimen>
+    <dimen name="activity_margin_horizontal">@dimen/margin_medium</dimen>
+    <dimen name="activity_margin_vertical">@dimen/margin_medium</dimen>
+
+    <dimen name="action_bar_height">40dp</dimen>
+    <dimen name="action_bar_button_height">24dp</dimen>
+    <dimen name="action_bar_elevation">@dimen/elevation</dimen>
+
+    <dimen name="dialog_header_padding">8dp</dimen>
+    <dimen name="dialog_button_vertical_padding">16dp</dimen>
+
+    <!--Text-->
+    <dimen name="text_big">22dp</dimen>
+    <dimen name="text_medium">18dp</dimen>
+    <dimen name="text_normal">14dp</dimen>
+    <dimen name="text_small">12dp</dimen>
+    <dimen name="dialog_header_text_size">@dimen/text_medium</dimen>
+
+    <!--CardView-->
+    <dimen name="card_corners">@dimen/micro</dimen>
+    <dimen name="card_elevation">@dimen/elevation</dimen>
+
+    <!--Menu-->
+    <dimen name="sliding_menu_width">320dp</dimen>
+    <dimen name="sliding_menu_padding">@dimen/padding_medium</dimen>
+    <dimen name="sliding_menu_item_padding">@dimen/padding_medium</dimen>
+    <dimen name="option_menu_item_margin">@dimen/margin_medium</dimen>
+
+    <!--Buttons-->
+    <dimen name="button_vertical_padding">8dp</dimen>
+    <dimen name="button_horizontal_padding">8dp</dimen>
+    <dimen name="button_small_padding_horizontal">@dimen/padding_small</dimen>
+    <dimen name="button_small_padding_vertical">@dimen/padding_small</dimen>
+    <dimen name="checkbox_size_big">@dimen/large</dimen>
+    <dimen name="drawable_left">@dimen/micro</dimen>
+    <dimen name="plus_minus_icon_size">@dimen/large</dimen>
+
+    <!-- Radio Buttons -->
+    <dimen name="radio_button_size_default">24dp</dimen>
+    <dimen name="radio_list_padding">12dp</dimen>
+
+</resources>

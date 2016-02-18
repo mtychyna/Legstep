@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/ActionBarContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="6">
+
+    <ImageView
+        android:id="@+id/actionbar_logo"
+        style="@style/ActionBarCaption"
+        android:layout_weight="5"
+        android:src="@drawable/logo"/>
+
+    <FrameLayout
+        android:id="@+id/actionbar_settings_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/clickable_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/action_bar_button_height"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_menu_vert"/>
+    </FrameLayout>
+
+</LinearLayout>
