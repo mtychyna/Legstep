@@ -304,7 +304,7 @@ public class MainActivity extends BaseActivity implements OnWalkStateChangedList
                     float halfWidth = displayMetrics.widthPixels / 2;
                     optionMenuLangPopup.setContentWidth((int) halfWidth);
                     optionMenuLangPopup.setHeight(ListPopupWindow.WRAP_CONTENT);
-                    optionMenuPopup.setBackgroundDrawable(Common.getDrawable(getContext(), R.drawable.shadow_5_corner_5));
+                    optionMenuLangPopup.setBackgroundDrawable(Common.getDrawable(getContext(), R.drawable.shadow_5_corner_5));
                     optionMenuLangPopup.show();
                     break;
 
