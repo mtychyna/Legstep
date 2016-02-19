@@ -6,6 +6,7 @@
         <attr name="maxValue" format="integer"/>
         <attr name="stepSize" format="integer"/>
         <attr name="format" format="string"/>
+        <attr name="enabled" format="boolean"/>
     </declare-styleable>
 
 </resources>

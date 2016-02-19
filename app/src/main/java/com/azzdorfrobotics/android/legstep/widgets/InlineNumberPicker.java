@@ -85,6 +85,7 @@ public class InlineNumberPicker extends LinearLayout {
                 setMaxValue(styles.getInt(R.styleable.InlineNumberPicker_maxValue, Integer.MAX_VALUE));
                 setValue(styles.getInt(R.styleable.InlineNumberPicker_numberValue, minValue));
                 setStepSize(styles.getInt(R.styleable.InlineNumberPicker_stepSize, stepSize));
+                setEnabled(styles.getBoolean(R.styleable.InlineNumberPicker_enabled, true));
             } finally {
                 styles.recycle();
             }
@@ -154,4 +155,10 @@ public class InlineNumberPicker extends LinearLayout {
         void onChange(int newValue);
     }
 
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+        minusButton.setEnabled(enabled);
+        plusButton.setEnabled(enabled);
+    }
 }

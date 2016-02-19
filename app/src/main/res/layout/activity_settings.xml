@@ -141,6 +141,7 @@
                         android:id="@+id/step_size_picker"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        app:enabled="false"
                         app:format="@string/common_integer_picker"
                         app:maxValue="8"
                         app:minValue="1"
